@@ -4,6 +4,7 @@ print("Гліб Кобрин, ІКСМ-1, Навчальна Група №2")
 
 while True:
     user_input = input("Введіть довільне ціле число у форматі *****: ")
+    symbol = input("Введіть символ, який ви хочете бачити у гістограмі: ")
 
     if user_input.isdigit():
 
@@ -19,7 +20,7 @@ while True:
             row = ""
             for digit in digits:
                 if digit >= i:
-                    row += "# "
+                    row += symbol + " "
                 else:
                     row += "  "
             print(row)
